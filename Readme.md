@@ -15,7 +15,7 @@ This tutorial has been made on :
 - Add a messenger product in the application
 <!-- ![Alt text](pictures\setup_app.png?raw=true "Title") -->
 <!-- ![ScreenShot](https://github.com/jeanmidevacc/messenger-bot-python-flask-zappa-amazon/pictures/setup_app.png) -->
-![alt text](pictures\setup_app.png "Description goes here")
+![alt text](pictures/setup_app.png "Setting a face book app")
 - Create a Facebook page
 ![Image](pictures\create_facebook_page.png)
 - Add a "send message" button to the page
