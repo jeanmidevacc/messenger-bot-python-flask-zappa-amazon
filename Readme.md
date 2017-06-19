@@ -13,15 +13,13 @@ This tutorial has been made on :
 **Facebook application setup**
 - Setup a [Facebook application](https://developers.facebook.com) in the developer
 - Add a messenger product in the application
-<!-- ![Alt text](pictures\setup_app.png?raw=true "Title") -->
-<!-- ![ScreenShot](https://github.com/jeanmidevacc/messenger-bot-python-flask-zappa-amazon/pictures/setup_app.png) -->
-![alt text](pictures/setup_app.png "Setting a face book app")
+![alt text](pictures/setup_app.png)
 - Create a Facebook page
-![Image](pictures\create_facebook_page.png)
+![alt text](pictures/create_facebook_page.png)
 - Add a "send message" button to the page
-![Image](pictures\add send message button.png)
+![alt text](pictures/add send message button.png)
 - Select the page that you have created (and accept the your profile have access blah blah)
-![Image](pictures\settings_messenger_product.png)
+![alt text](pictures/settings_messenger_product.png)
 - Keep the access token that has been assigned
 
 **Flask application Setup**
@@ -29,7 +27,7 @@ This tutorial has been made on :
 - Activate the environment `activate zappa_env`
 - Install with pip `pip install zappa flask awscli`
 - Clone the content of this git in a separate folder of your environment
-![Image](pictures\environnment.png)
+![alt text](pictures/environnment.png)
 - Replace the `access_token` in the application.py file by the access token of your application
 
 **Deploy the application on AWS**
@@ -37,14 +35,14 @@ This tutorial has been made on :
 - Use the command `zappa init` in your project folder
 
 In this tutorial you can accept the default parameter that zappa offer you to complete the process:
-![Image](pictures\zappa_init.png)
+![alt text](pictures/zappa_init.png)
   1. environment name : dev
   2. S3 bucket name : random name
   3. available for all region : n
 
 - Check if in your project folder there is a zappa_settings.json file
 - Your application is now initialize so we can deploy the app with the command `zappa deploy dev`
-![Image](pictures\zappa_deploy_dev.png)
+![alt text](pictures/zappa_deploy_dev.png)
 Let's the magic begin (take a break , have a kitkat)
 
 **Finish to complete the Facebook application setup**
@@ -54,7 +52,7 @@ On the messenger settings page you have to setup the webhooks
 - Create a verify token (be imaginative or not)
 - Verify and save
 - Subscribe the webhook to your facebook page events
-![Image](pictures\subscribe_webhook.png)
+![alt text](pictures/subscribe_webhook.png)
 
 **Update you application**
 
@@ -64,7 +62,7 @@ On the messenger settings page you have to setup the webhooks
 
 **Test it**
 
-![Image](pictures\test_bot.png)
+![alt text](pictures/test_bot.png)
 
 
 ## Ressources
