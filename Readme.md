@@ -13,7 +13,7 @@ This tutorial has been made on :
 **Facebook application setup**
 - Setup a [Facebook application](https://developers.facebook.com) in the developer
 - Add a messenger product in the application
-![Image](pictures\setup_app.png)
+![Alt text](pictures\setup_app.png)
 - Create a Facebook page
 ![Image](pictures\create_facebook_page.png)
 - Add a "send message" button to the page
