@@ -13,7 +13,9 @@ This tutorial has been made on :
 **Facebook application setup**
 - Setup a [Facebook application](https://developers.facebook.com) in the developer
 - Add a messenger product in the application
-![Alt text](pictures\setup_app.png?raw=true "Title"))
+<!-- ![Alt text](pictures\setup_app.png?raw=true "Title") -->
+<!-- ![ScreenShot](https://github.com/jeanmidevacc/messenger-bot-python-flask-zappa-amazon/pictures/setup_app.png) -->
+![alt text](pictures\setup_app.png "Description goes here")
 - Create a Facebook page
 ![Image](pictures\create_facebook_page.png)
 - Add a "send message" button to the page
