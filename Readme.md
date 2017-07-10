@@ -44,6 +44,7 @@ In this tutorial you can accept the default parameter that zappa offer you to co
 - Check if in your project folder there is a zappa_settings.json file
 - Your application is now initialize so we can deploy the app with the command `zappa deploy dev`
 ![alt text](pictures/zappa_deploy_dev.png)
+
 Let's the magic begin (take a break , have a kitkat)
 
 **Finish to complete the Facebook application setup**
