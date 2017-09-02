@@ -29,18 +29,6 @@ replies = [
     },
 ]
 
-def log(message):
-    """
-    Function to log message in the console
-
-    :param message:
-    """
-    try:
-        print(message)
-    except Exception as e:
-        print("ERROR:"+str(e))
-
-
 def send_typing(recipient_id,action):
     """
     Function to send one of the three types of elements link to the typing
@@ -64,8 +52,8 @@ def send_typing(recipient_id,action):
 
     r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
     if r.status_code != 200:
-        log(r.status_code)
-        log(r.text)
+        print(r.status_code)
+        print(r.text)
 
 
 def send_message(recipient_id, message_text):
@@ -76,7 +64,7 @@ def send_message(recipient_id, message_text):
     :param message_text:
     :return:
     """
-    log("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
+    print("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
     timer3dot(recipient_id,2)
     params = {
         "access_token": access_token
@@ -95,8 +83,8 @@ def send_message(recipient_id, message_text):
     send_typing(recipient_id,"TYPING_OFF")
     r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
     if r.status_code != 200:
-        log(r.status_code)
-        log(r.text)
+        print(r.status_code)
+        print(r.text)
 
 def send_quickreply(recipient_id,text,replies):
     """
@@ -129,8 +117,8 @@ def send_quickreply(recipient_id,text,replies):
     send_typing(recipient_id,"TYPING_OFF")
     r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
     if r.status_code != 200:
-        log(r.status_code)
-        log(r.text)
+        print(r.status_code)
+        print(r.text)
 
 def timer3dot(recipient_id,timer=1):
     """
@@ -194,12 +182,12 @@ def webhook():
     # endpoint for processing incoming messaging events
 
     data = request.get_json()
-    log(data)  # you may not want to log every incoming message in production, but it's good for testing
+    print(data)  # you may not want to print every incoming message in production, but it's good for testing
 
     if data["object"] == "page":
         for entry in data["entry"]:
             for messaging_event in entry["messaging"]:
-                log(messaging_event)
+                print(messaging_event)
                 if messaging_event.get("message") :  # someone sent us a message
                    talkuser(messaging_event)
     return "ok", 200
